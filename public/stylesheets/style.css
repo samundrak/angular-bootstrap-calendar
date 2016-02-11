@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.skc-calendar{
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+}
+#skc-calendar-month-name{
+	font-size: 20px;
+}
+.skc-days-name{
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px;
+	text-align: center;
+}
+
+.skc-days{
+	height:75px;
+	color:purple;
+}
+.holiday{
+	color:red;
+}
+.days-numbers{
+	font-size: 15px;
+	font-weight: bold;
+}
+.today{
+	color:green;
+	font-size:20px;
+	background-color:#ddd;
+}

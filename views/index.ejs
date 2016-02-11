@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="angular/angular.min.js"></script>
+    <script src="moment/moment.js"></script>
+    <script src="underscore/underscore-min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="ui-bootstrap.js"></script>
+    <script src="angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="test">
+  		<div class="row skc-calendar">
+  			<div class="col-sm-4">
+  			<div class="btn-group" role="group" aria-label="Basic example">
+
+  				<div ng-click="previous()" class="btn btn-default">Previous</div>
+  				<div ng-click="present()" class="btn btn-default">Today</div>
+  				<div ng-click="next()" class="btn btn-default">Next</div>
+</div>
+  			</div>
+  			<div class="col-sm-4">
+  				<div id="skc-calendar-month-name">{{monthName}} {{year}}</div>
+  			</div>
+  			<div class="col-sm-4">
+  			<div class="btn-group pull-right" role="group" aria-label="Basic example">
+
+  				<div class="btn btn-default">Year</div>
+  				<div class="btn btn-default">Month</div>
+  				<div class="btn btn-default">Week</div>
+  				<div class="btn btn-default">Day</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  					<days-name  year="{{year}}"  month="{{ month }}"></days-name>
+  		</div>
+  		<div class="row">
+  			
+  		</div>
+  </body>
+</html>
